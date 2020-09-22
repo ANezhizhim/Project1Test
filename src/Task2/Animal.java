@@ -1,26 +1,33 @@
 package Task2;
 
 public class Animal {
-   protected String food, location, name;
+    protected String food, location, name;
 
-    public void makeNoise (){
-        System.out.println(this.name+" Шумит.");
-    }
-    public void eat (){
-        System.out.println(this.name+" ест.");
+    public Animal(String anmlFood, String anmlLocation, String anmlName) {
+        food = anmlFood;
+        location = anmlLocation;
+        name = anmlName;
 
     }
-    public void sleep (){
-        System.out.println(this.name+" спит.");
+
+    public void makeNoise() {
+        System.out.println(this.name + " Шумит.");
+    }
+
+    public void eat() {
+        System.out.println(this.name + " ест.");
+
+    }
+
+    public void sleep() {
+        System.out.println(this.name + " спит.");
     }       //, eat, sleep
 
-    public void setFood(String anml_food){
-        food=anml_food;
-
+    public void setFood(String anmlFood) {
+        food = anmlFood;
     }
 
-    public void setLocation(String anml_location){
-        location=anml_location;
-
+    public void setLocation(String anmlLocation) {
+        location = anmlLocation;
     }
 }

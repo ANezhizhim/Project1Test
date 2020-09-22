@@ -4,8 +4,8 @@ public class Hourse extends Animal {
 
     private String  breed, color;
 
-    Hourse(String animalName) {
-        name= animalName;
+    public Hourse(String anmFood, String anmLocation, String anmName) {
+        super(anmFood, anmLocation,anmName);
 
     }
 
@@ -24,10 +24,10 @@ public class Hourse extends Animal {
         System.out.println(name+" крепко спит.");
     }
 
-    public void setBreed (String hourse_breed){
-        breed=hourse_breed;
+    public void setBreed (String hourseBreed){
+        breed=hourseBreed;
     }
-    public void setColor (String hourse_color){
-        color=hourse_color;
+    public void setColor (String hourseColor){
+        color=hourseColor;
     }
 }

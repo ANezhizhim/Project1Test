@@ -4,12 +4,12 @@ public class Dog extends Animal {
 
     private String  breed, color;
 
-    Dog (String animalName) {
-        name= animalName;
+    public Dog(String anmFood, String anmLocation, String anmName) {
+        super(anmFood, anmLocation,anmName);
+
     }
     @Override
     public void makeNoise() {
-        //  super.makeNoise();
         System.out.println(name+" гавкает.");
     }
     @Override
@@ -21,11 +21,11 @@ public class Dog extends Animal {
         System.out.println(name+" крепко спит.");
     }
 
-    public void setBreed (String dog_breed){
-        breed=dog_breed;
+    public void setBreed (String dogBreed){
+        breed=dogBreed;
     }
-    public void setColor (String dog_color){
-        color=dog_color;
+    public void setColor (String dogColor){
+        color=dogColor;
     }
 
 }
