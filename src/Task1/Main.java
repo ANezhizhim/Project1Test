@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Phone arrPhone[] = new Phone[4];
+        Phone []arrPhone = new Phone[4];
 
         arrPhone[0] = new Phone("9155476161", "Honor", 120.1f);
         arrPhone[1] = new Phone("9155476162", "Samsung", 125.2f);
