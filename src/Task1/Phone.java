@@ -20,25 +20,22 @@ public class Phone {
         this("8-800", "Стационарный");
     }
 
-
-    public void receiveCall(String Name) {
-        System.out.println("Звонит: " + Name);
+    public void receiveCall(String name) {
+        System.out.println("Звонит: " + name);
     }
 
-    public void receiveCall(String Name, String Number) {
-        System.out.println("Звонит: " + Name + ", Номер: " + Number);
+    public void receiveCall(String name, String number) {
+        System.out.println("Звонит: " + name + ", Номер: " + number);
     }
 
     public String getNumber() {
         return number;
-
-        // System.out.println("Номер : " + number);
     }
 
-    public void sendMessage1(String... numbers1) {
+    public void sendMessage1(String... numbers) {
 
-        for (int i = 0; i < numbers1.length; i++) {
-            System.out.println("Номер : " + numbers1[i]);
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println("Номер : " + numbers[i]);
         }
     }
 }
