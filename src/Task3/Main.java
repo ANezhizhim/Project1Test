@@ -2,22 +2,22 @@ package Task3;
 
 import java.util.Arrays;
 
-public class Main3 {
+public class Main {
     public static void main(String[] args) {
-        Student student1=new Student(3.0D);
-        Student student2=new Student(4.0D);
-        Student student3=new Student(5.0D);
-        Student aspirant1 = new Aspirant(3.0D, "Влияние радиации на рост телеграфных столбов");
-        Student aspirant2 = new Aspirant(3.0D, "Влияние радиации на рост телеграфных столбов");
-        Student aspirant3 = new Aspirant(5.0D, "Влияние радиации на рост телеграфных столбов");
+        Student student1 = new Student("Василий", "Петров", "A114", 4.8D);
+        Student student2 = new Student("Иван", "Иванов", "A115", 4.0D);
+        Student student3 = new Student("Петр", "Сергеев", "В116", 5.0D);
+        Student aspirant1 = new Aspirant("Александр", "Серов", "A120",3.0D, "Влияние радиации на рост телеграфных столбов");
+        Student aspirant2 = new Aspirant("Василий", "Лановой", "A512",3.0D, "Интегральные методы исчисления");
+        Student aspirant3 = new Aspirant("Олег", "Газманов", "A620",5.0D, "Влияние размера лошади на ее маневренность");
 
-        Student students[]={student1,student2,student3,aspirant1,aspirant2,aspirant3};
+        Student[] students = {student1, student2, student3, aspirant1, aspirant2, aspirant3};
 
-        for (Student std:
-             students ){
+        for (Student std :
+                students) {
             System.out.println(std.getScholarship());
         }
-        
+
     }
 
 }

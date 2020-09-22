@@ -2,21 +2,21 @@ package Task3;
 
 public class Aspirant extends Student {
     protected String dissertationTopic;
-    //double averageMark;
 
-   public Aspirant (double asp_averageMark, String asp_dissertationTopic){
-        super(asp_averageMark);
-        this.dissertationTopic=asp_dissertationTopic;
+    public Aspirant(String aspFirstName, String aspLastName, String aspGroup, double aspAverageMark, String aspDissertationTopic) {
+        super(aspFirstName, aspLastName, aspGroup, aspAverageMark);
+        dissertationTopic = aspDissertationTopic;
 
-}
-   @Override
+    }
+
+    @Override
     public double getScholarship() {
-        double Summ;
-        if (averageMark==5.0D){
-            Summ=200.0D;
-        } else Summ=180.0D;
+        double summ;
+        if (this.averageMark == 5.0D) {
+            summ = 200.0D;
+        } else summ = 180.0D;
 
-        return Summ;
+        return summ;
 
     }
 }

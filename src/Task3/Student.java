@@ -1,19 +1,23 @@
 package Task3;
 
 public class Student {
-    protected String firstName, lastName,group;
-    double averageMark;
-    public Student(double std_averageMark){
-        averageMark=std_averageMark;
+    protected String firstName, lastName, group;
+    protected double averageMark;
+
+    public Student(String stFirstName, String stLastName, String stGroup, double stAverageMark) {
+        averageMark = stAverageMark;
+        group = stGroup;
+        firstName = stFirstName;
+        lastName = stLastName;
     }
 
     public double getScholarship() {
-        double Summ;
-        if (averageMark==5.0D){
-            Summ=100.0D;
-        } else Summ=80.0D;
+        double summ;
+        if (averageMark == 5.0D) {
+            summ = 100.0D;
+        } else summ = 80.0D;
 
-        return Summ;
+        return summ;
     }
 
 
