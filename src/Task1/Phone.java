@@ -1,44 +1,44 @@
 package Task1;
 
 public class Phone {
-    String number;
-    String model;
-    float weight;
+    protected String number;
+    protected String model;
+    protected float weight;
 
-    public  Phone(String ph_number, String ph_model, float ph_weight){
-
-     this("8-800","Стационарный");
-
-        this.number=ph_number;
-        this.model=ph_model;
-        this.weight=ph_weight;
-
+    public Phone(String phNumber, String phModel, float phWeight) {
+        this.number = phNumber;
+        this.model = phModel;
+        this.weight = phWeight;
     }
-    public  Phone(String ph_number, String ph_model){
-        this.number=ph_number;
-        this.model=ph_model;
-    }
-    public  Phone(){
 
+    public Phone(String phNumber, String phModel) {
+        this.number = phNumber;
+        this.model = phModel;
+    }
+
+    public Phone() {
+        this("8-800", "Стационарный");
     }
 
 
-    public void receiveCall(String Name){
+    public void receiveCall(String Name) {
         System.out.println("Звонит: " + Name);
     }
 
-    public void receiveCall(String Name,String Number){
-        System.out.println("Звонит: " + Name+", Номер: "+ Number);
+    public void receiveCall(String Name, String Number) {
+        System.out.println("Звонит: " + Name + ", Номер: " + Number);
     }
-    public String getNumber(){
+
+    public String getNumber() {
         return number;
 
-       // System.out.println("Номер : " + number);
+        // System.out.println("Номер : " + number);
     }
-   public void sendMessage1(String ... numbers1){
 
-       for(int i=0; i<numbers1.length;i++) {
-           System.out.println("Номер : " + numbers1[i]);
-       }
-   }
+    public void sendMessage1(String... numbers1) {
+
+        for (int i = 0; i < numbers1.length; i++) {
+            System.out.println("Номер : " + numbers1[i]);
+        }
+    }
 }
