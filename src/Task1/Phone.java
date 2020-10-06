@@ -1,9 +1,9 @@
 package Task1;
 
 public class Phone {
-    protected String number;
-    protected String model;
-    protected float weight;
+    private String number;
+    private String model;
+    private float weight;
 
     public Phone(String phNumber, String phModel, float phWeight) {
         this.number = phNumber;
@@ -14,6 +14,17 @@ public class Phone {
     public Phone(String phNumber, String phModel) {
         this.number = phNumber;
         this.model = phModel;
+    }
+public String getNumber(){
+        return this.number;
+    }
+
+    public String getModel(){
+        return this.model;
+    }
+
+    public float getWeight(){
+        return this.weight;
     }
 
     public Phone() {
@@ -28,9 +39,7 @@ public class Phone {
         System.out.println("Звонит: " + name + ", Номер: " + number);
     }
 
-    public String getNumber() {
-        return number;
-    }
+
 
     public void sendMessage1(String... numbers) {
 

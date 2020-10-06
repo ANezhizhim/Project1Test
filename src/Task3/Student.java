@@ -1,7 +1,7 @@
 package Task3;
 
 public class Student {
-    protected String firstName, lastName, group;
+    private String firstName, lastName, group;
     protected double averageMark;
 
     public Student(String stFirstName, String stLastName, String stGroup, double stAverageMark) {
@@ -15,7 +15,9 @@ public class Student {
         double summ;
         if (averageMark == 5.0D) {
             summ = 100.0D;
-        } else summ = 80.0D;
+        } else {
+            summ = 80.0D;
+        }
 
         return summ;
     }

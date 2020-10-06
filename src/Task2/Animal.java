@@ -1,7 +1,8 @@
 package Task2;
 
 public class Animal {
-    protected String food, location, name;
+    protected String name;
+    private String food, location;
 
     public Animal(String anmlFood, String anmlLocation, String anmlName) {
         food = anmlFood;
@@ -10,6 +11,12 @@ public class Animal {
 
     }
 
+    public String getLocation() {
+        return this.location;
+    }
+    public String getfood() {
+        return this.food;
+    }
     public void makeNoise() {
         System.out.println(this.name + " Шумит.");
     }

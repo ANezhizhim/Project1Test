@@ -13,14 +13,14 @@ public class Main {
 
         arrPhone[0].receiveCall("Вася");
 
-        for (Phone phon :
+        for (Phone phone :
                 arrPhone) {
-            System.out.println("Номер телефона: " + phon.number + " модель: " + phon.model + " Вес: " + phon.weight);
+            System.out.println("Номер телефона: " + phone.getNumber() + " модель: " + phone.getModel() + " Вес: " + phone.getWeight());
         }
 
-        for (Phone phon :
+        for (Phone phone :
                 arrPhone) {
-            System.out.println("Номер телефона:" + phon.getNumber());
+            System.out.println("Номер телефона:" + phone.getNumber());
         }
 
         arrPhone[0].receiveCall("Давид Маркович", "Городской");
@@ -28,6 +28,13 @@ public class Main {
     }
 }
 
+
+
+/*Замечание 2:
+Задание 1: Phone – почему поля protected, если наследников нет у этого класса? В Main пробелма с код стайлом,
+ Phone phon – почему нельзя пременную phone назвать?
+
+ */
 
 /*
 Замечание:
