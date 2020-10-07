@@ -1,7 +1,5 @@
 package Task3;
 
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
         Student student1 = new Student("Василий", "Петров", "A114", 4.8D);
